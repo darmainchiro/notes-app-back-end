@@ -16,7 +16,7 @@ class NotesHandler {
     try {
       this._validator.validateNotePayload(request.payload);
       const { title = 'untitled', body, tags } = request.payload;
-      this._service.addNote({ title, body, tags });
+      // this._service.addNote({ title, body, tags });
 
       const noteId = this._service.addNote({ title, body, tags });
 
